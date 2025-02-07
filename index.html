@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARS - AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="chat-header-content">
+                <div class="bot-avatar">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <span class="header-title">TARS</span>
+                <button class="expand-button">▼</button>
+            </div>
+        </div>
+        <div class="chat-messages">
+            <div class="message bot-message">
+                <div class="message-avatar">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <div class="message-content">
+                    <p>Hello, I'm TARS 👋</p>
+                    <p>How can I assist you today?</p>
+                </div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type a message..." class="message-input">
+            <div class="input-buttons">
+                <button class="emoji-button">😊</button>
+                <input type="file" id="file-input" class="file-input" multiple>
+                <button class="attachment-button" title="Attach files"><i class="fa-solid fa-paperclip"></i></button>
+                <button class="send-button"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div> 
+    <script src="agent.js"></script>
+</body>
+</html>
